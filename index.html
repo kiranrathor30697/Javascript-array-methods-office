@@ -53,16 +53,50 @@
             // //2. indextLastOf();
             // //3. includes();
 
-            let res7 = array1.lastIndexOf("Rudransh");
-            console.log(res7);
-            let res8 = array1.lastIndexOf("kiran ");
-            console.log(res8);
+            // let res7 = array1.lastIndexOf("Rudransh");
+            // console.log(res7);
+            // let res8 = array1.lastIndexOf("kiran ");
+            // console.log(res8);
 
-            let res9 = array2.includes('4 ');
-            console.log(res9);
-            alert(res9)
+            // let res9 = array2.includes('4 ');
+            // console.log(res9);
+            // alert(res9)
             
-                
+
+            // Find method
+
+            let arrayOfObj = [{
+              name:'kiran',
+              surname:'Rathor',
+              age:"24"
+            },
+            {
+              name:'Kamlesh',
+              surname:'Rathor',
+              age:"28"
+            },
+            {
+              name:'Rudransh',
+              surname:'Rathor',
+              age:"1.5"
+            }]
+            
+            let rslt = arrayOfObj.find((cv,idx,arr)=>{
+              console.log(cv.name);
+              console.log(cv.surname);
+              console.log(cv.age);
+            })
+
+            //filter method
+
+            let rslt1 = arrayOfObj.filter((cv,idx,arr)=>{
+              let x = cv.age > 0;
+              return (x);
+            })
+            console.log('this is ',rslt1);
+
+            let rslt2 = arrayOfObj.filter(item => item.age < 25);
+            console.log(rslt2.length);
 
         </script>
     </body>
