@@ -11,8 +11,8 @@
 
 
         <script>
-            //    //Splice method
-              let array1 =  ["kiran ","Anjali ","Kamlesh ",'Rudransh'];
+            //    //splice method
+              let array1 =  ["Ramesh ","Anjali ","Kamlesh ","Rudransh ", 'Kiran'];
             //  let res1 =  array1.splice(1,1);// 1 index remove 1 value
             //  let res2 =  array1.splice(0,3);// 1 index remove 3 value
             //  console.log(res1);
@@ -21,8 +21,8 @@
 
 
 
-            // //     //Slice Method
-              let array2 = ["1 " ,'2 ','3 ','4 ','5 '];
+            // //     //slice Method
+              let array2 = ["1 " ,'2 ','3 ','4 ','5 ','9','3','7','10','150'];
             //  let res3 = array2.slice(1,3);//copy 1 to 3 value
             //  let res4 = array2.slice(0,5);//copy 0 to 5 value
             //  console.log(res3);
@@ -31,7 +31,7 @@
 
 
 
-            //  //Concat method
+            //  //concat method
             //  let res5 = array1.concat(array2);
             //  console.log(res5);
             //  document.write(res5);
@@ -63,23 +63,23 @@
             // alert(res9)
             
 
-            // Find method
+            // find method
 
-            // let arrayOfObj = [{
-            //   name:'kiran',
-            //   surname:'Rathor',
-            //   age:"24"
-            // },
-            // {
-            //   name:'Kamlesh',
-            //   surname:'Rathor',
-            //   age:"28"
-            // },
-            // {
-            //   name:'Rudransh',
-            //   surname:'Rathor',
-            //   age:"1.5"
-            // }]
+            let arrayOfObj = [{
+              name:'kiran',
+              surname:'Rathor',
+              age:"24"
+            },
+            {
+              name:'Kamlesh',
+              surname:'Rathor',
+              age:"28"
+            },
+            {
+              name:'Rudransh',
+              surname:'Rathor',
+              age:"1.5"
+            }]
             
             // let rslt = arrayOfObj.find((cv,idx,arr)=>{
             //   console.log(cv.name);
@@ -97,6 +97,153 @@
 
             // let rslt2 = arrayOfObj.filter(item => item.age < 25);
             // console.log(rslt2.length);
+
+
+            // map mathod()
+
+            // let mydata = arrayOfObj.map((currentValue,index,array)=>{
+            //   return(currentValue);
+            // });
+            // console.log(mydata);
+            // console.log(mydata[0].name);
+            // console.log(mydata[1].name);
+            // console.log(mydata[2].name);
+            // console.log(mydata.length);
+
+
+            // sort method
+
+          //   let mydata1 = array1.sort();
+          //   console.log(mydata1);
+
+          //   let mydata2 = array2.sort();
+
+          //  function compareNumeric(a,b){
+          //     return a-b;
+          //   }
+            
+          //   array2.sort(compareNumeric);
+          //   console.log(array2);
+
+
+            // function compareNumeric(a,b){
+            //   return b-a;
+            // }
+
+            // array2.sort(compareNumeric);
+            // console.log(array2);
+
+
+            // alert(array1.sort((a, b) => (a > b ? 1 : -1)));
+
+            // alert(array2.sort((a, b) => a.localeCompare(b)));
+
+
+            // reverse method
+
+            array1.reverse();
+            console.log(array1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+              // Function to check letters and numbers
+
+              // function alphanumeric(inputtxt)
+              //     { 
+              //     var letterNumber = /^[0-9a-zA-Z]+$/
+              //       if(inputtxt.value.match(letterNumber)) 
+              //         {
+              //         return (true);
+              //         }
+              //       else
+              //         { 
+              //         alert("message"); 
+              //       return (false); 
+              //       }
+              //   console.log(letterNumber);
+
+              //   }
+  
+
+
+
+
+
 
         </script>
     </body>
