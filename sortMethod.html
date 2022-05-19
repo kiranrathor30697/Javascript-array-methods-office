@@ -1,0 +1,33 @@
+<script>
+
+    let array1 =  ["Ramesh ","Anjali ","Kamlesh ","Rudransh ", 'Kiran'];
+    let array2 = ["1 " ,'2 ','3 ','4 ','5 ','9','3','7','10','150'];
+        // sort method
+
+        let mydata1 = array1.sort();
+        console.log(mydata1);
+
+        let mydata2 = array2.sort();
+
+        function compareNumeric(a,b){
+            return a-b;
+        }
+        
+        array2.sort(compareNumeric);
+        console.log(array2);
+
+
+        function compareNumeric(a,b){
+            return b-a;
+        }
+
+        array2.sort(compareNumeric);
+        console.log(array2);
+
+
+        alert(array1.sort((a, b) => (a > b ? 1 : -1)));
+
+        alert(array2.sort((a, b) => a.localeCompare(b)));
+
+      
+</script>

@@ -1,0 +1,27 @@
+<script>
+     // find method
+
+        let arrayOfObj = [
+                            {
+                                name:'kiran',
+                                surname:'Rathor',
+                                age:"24"
+                            },
+                            {
+                                name:'Kamlesh',
+                                surname:'Rathor',
+                                age:"28"
+                            },
+                            {
+                                name:'Rudransh',
+                                surname:'Rathor',
+                                age:"1.5"
+                            }
+                        ]
+                            
+        let rslt = arrayOfObj.find((cv,idx,arr)=>{
+            console.log(cv.name);
+            console.log(cv.surname);
+            console.log(cv.age);
+        })
+</script>
