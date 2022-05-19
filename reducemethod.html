@@ -1,3 +1,18 @@
 <script>
+    let x = [1,2,3,10,50];
+
+    let y = x.reduce((acc,curr)=>{
+        let z = acc + curr ;
+        return z;
+    },0);
+    console.log(y);
+
+    let a = x.reduce((acc,curr)=>{
+        let z = acc - curr ;
+        return z;
+    },0);
+    console.log(a);
+
+
     
 </script>

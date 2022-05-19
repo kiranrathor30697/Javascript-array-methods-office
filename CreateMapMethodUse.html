@@ -1,0 +1,82 @@
+<script>
+
+
+    // this is a array of object
+
+    let myObj = {
+                    fname:"Shivkanya",
+                    lname:"Gurjar",
+                    age:'19'
+                }
+
+
+
+//----------------------------------------------------------------------------------
+
+    //create Object
+    let x = new Map();
+
+//----------------------------------------------------------------------------------    
+
+    //set item x 
+
+    x.set('name',"Kiran");
+    x.set('surname',"Rathor");
+    x.set('age',"25");
+
+    console.log(x);
+
+//----------------------------------------------------------------------------------
+
+    //checking this key value existed or not
+    let y = x.has("name");
+
+    console.log(y);
+
+//----------------------------------------------------------------------------------
+
+    //Delete Value
+    x.delete("name")
+
+    console.log(x);
+
+//----------------------------------------------------------------------------------
+
+    //checking this key value existed or not
+    let y1 = x.has("name");
+
+    console.log(y1);
+
+//---------------------------------------------------------------------------------
+
+    //get the value
+
+    let x2 = x.get("age");
+
+    console.log(x2);
+
+//--------------------------------------------------------------------------------
+
+
+    // find current lenth
+
+    let x4 = x.size;
+
+    console.log(x4);
+
+
+//---------------------------------------------------------------------------------
+
+    //clear all data
+    let x3 = x.clear();
+
+    console.log(x3);
+
+//--------------------------------------------------------------------------------
+
+    let myEntry = new Map(Object.entries(myObj));
+
+    console.log(myEntry.get("fname"));
+
+
+</script>
