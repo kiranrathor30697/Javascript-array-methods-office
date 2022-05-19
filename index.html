@@ -139,8 +139,9 @@
             // alert(array2.sort((a, b) => a.localeCompare(b)));
 
 
-            // reverse method
-
+            // reverse methodfind((cv,idx,arr)=>{
+            //   return (cv.age<24);
+            // })
             // array1.reverse();
             // console.log(array1);
 
@@ -150,17 +151,77 @@
             // console.log(kk);
 
 
+          
+          
+          
+          
+          
+          //  let shots = [
+          //       {id: 1, amount: 2},
+          //       {id: 2, amount: 4}
+          //   ]
+          
+          
+          
+          
+          
+          //   const amounts = shots.map((a) => a.amount)
+          //   const highestAmount = Math.max(...amounts);
+          
+          // // console.log(highestAmount);
+   
+          
             var employess = [
-              {name:"james",age:24,salary:12000},
-              {name:"john",age:25,salary:15000},
-              {name:"steve",age:28,salary:10000},
-              {name:"james",age:23,salary:2000}
-            ]
+              {name:"Kiran",age:25,salary:12000},
+              {name:"Kamlesh",age:28,salary:15000},
+              {name:"Anjali",age:20,salary:10000},
+              {name:"Rudransh",age:1.5,salary:2000},
+              {name:"Vijay",age:22,salary:20000},
+            ];
 
+            document.write("<h2>All Details</h2>")
+
+
+            for( i = 0; i < employess.length; i++){
+              document.write("Name : " + employess[i].name +","+  " Age : " + employess[i].age + "," + " Salary : " +  employess[i].salary + "<br />")
+            }
+
+              // console.log(employess);
+
+              document.write("<br />")
+              document.write("<br />")
+              document.write("<h2>24 Less Then Age Detail</h2>");
+
+
+            for(i=0;i<employess.length;i++){
+                if(employess[i].age <= 24){
+                      
+                document.write("Name : " + employess[i].name + ", " + " Age : " + employess[i].age + ", " + " Salary : " +  employess[i].salary+ "<br />" )  
+              }
+            }
+
+            document.write("<br />")
+            document.write("<h2>24 Greater Then Age Detail</h2>")
+
+
+            for(let i=0; i<employess.length;i++){
+              if(employess[i].age>24){
+                document.write("Name : " + employess[i].name + ", " +" Age : " + employess[i].age + ", " + "Salary : "  + employess[i].salart +"<br />" )
+              }
+            }
              
+            // const age1 = employess.map(a => a.age);
+            // const highestAmount = Math.max(...age1);
+            // console.log(highestAmount);
+
+            // const age2 = employess.map(a => a.age);
+            // const highestAmount2 = Math.min(...age2);
+            // console.log(highestAmount2);
+            // console.log(highestAmount2);
 
 
 
+              
 
 
 
