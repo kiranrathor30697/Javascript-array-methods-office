@@ -1,0 +1,70 @@
+<script> 
+         var employess = [
+              {name:"Kiran",age:25,salary:12000},
+              {name:"Kamlesh",age:28,salary:15000},
+              {name:"Anjali",age:20,salary:10000},
+              {name:"Rudransh",age:1.5,salary:2000},
+              {name:"Vijay",age:22,salary:20000},
+            ];
+
+            // All the Details
+            document.write("<h2>All Details</h2>")
+
+            for( i = 0; i < employess.length; i++){
+              document.write("Name : " + employess[i].name +","+  " Age : " + employess[i].age + "," + " Salary : " +  employess[i].salary + "<br />")
+            }
+
+              // console.log(employess);
+
+              document.write("<br />")
+              document.write("<br />")
+
+
+              // Less then Details
+              document.write("<h2>24 Less Then Age Detail</h2>");
+
+
+            for(i=0;i<employess.length;i++){
+                if(employess[i].age <= 24){
+                      
+                document.write("Name : " + employess[i].name + ", " + " Age : " + employess[i].age + ", " + " Salary : " +  employess[i].salary+ "<br />" )  
+              }
+            }
+
+            document.write("<br />")
+
+
+            //Greater then Details
+            document.write("<h2>24 Greater Then Age Detail</h2>")
+
+
+            for(let i=0; i<employess.length;i++){
+              if(employess[i].age>24){
+                document.write("Name : " + employess[i].name + ", " +" Age : " + employess[i].age + ", " + "Salary : "  + employess[i].salart +"<br />" )
+              }
+            }
+             
+            const age1 = employess.map(a => a.age);
+            const highestAmount = Math.max(...age1);
+            console.log(highestAmount);
+
+            const age2 = employess.map(a => a.age);
+            const highestAmount2 = Math.min(...age2);
+            console.log(highestAmount2);
+            console.log(highestAmount2);
+
+
+
+           let shots = [
+                {id: 1, amount: 2},
+                {id: 2, amount: 4}
+            ]
+          
+          
+            const amounts = shots.map((a) => a.amount)
+            const highestAmount = Math.max(...amounts);
+          
+            console.log(highestAmount);
+
+
+</script>
