@@ -3,6 +3,24 @@
     // split Method
 
     let myString = "kiran"
-        let kk = myString.split('');
-        console.log(kk);
+        let res = myString.split('');
+        console.log(res);
+
+    let myData = 'father, mother, sister, brother, son, daughter';
+    let newData = myData.split(',');
+    console.log(newData);
+
+    let newData2 = myData.split(', ', 2);
+    console.log("here",newData2);
+
+    let newData3 = myData.split(' ', 2);
+    console.log(newData3);
+
+    for(let x of newData){
+        document.write(` This Is my: ${x} <br />`);
+    }
+
+    let newData4 = myData.split();
+    console.log(newData4);
+
 </script>

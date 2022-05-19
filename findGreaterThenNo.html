@@ -7,6 +7,13 @@
               {name:"Vijay",age:22,salary:20000},
             ];
 
+            let rslt1 = employess.filter((cv,idx,arr)=>{
+              let x = cv.age > 24;
+              return (x);
+            })
+            console.log('this is ',rslt1);
+            document.write( rslt1.map(a=>(a.name+" "+a.age+" "+a.salary)));
+
             // All the Details
             document.write("<h2>All Details</h2>")
 
@@ -51,7 +58,6 @@
             const age2 = employess.map(a => a.age);
             const highestAmount2 = Math.min(...age2);
             console.log(highestAmount2);
-            console.log(highestAmount2);
 
 
 
@@ -62,9 +68,9 @@
           
           
             const amounts = shots.map((a) => a.amount)
-            const highestAmount = Math.max(...amounts);
+            const highestAmount3 = Math.max(...amounts);
           
-            console.log(highestAmount);
+            console.log(highestAmount3);
 
 
 </script>
