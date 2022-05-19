@@ -6,13 +6,17 @@
               {name:"Rudransh",age:1.5,salary:2000},
               {name:"Vijay",age:22,salary:20000},
             ];
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+            document.write("<h2>Using Filter Greater Then Details</h2>")
             let rslt1 = employess.filter((cv,idx,arr)=>{
               let x = cv.age > 24;
               return (x);
             })
             console.log('this is ',rslt1);
             document.write( rslt1.map(a=>(a.name+" "+a.age+" "+a.salary)));
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
             // All the Details
             document.write("<h2>All Details</h2>")
@@ -21,11 +25,14 @@
               document.write("Name : " + employess[i].name +","+  " Age : " + employess[i].age + "," + " Salary : " +  employess[i].salary + "<br />")
             }
 
-              // console.log(employess);
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+             // console.log(employess);
 
               document.write("<br />")
               document.write("<br />")
 
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
               // Less then Details
               document.write("<h2>24 Less Then Age Detail</h2>");
@@ -38,8 +45,10 @@
               }
             }
 
-            document.write("<br />")
+            document.write("<br />");
 
+          
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
             //Greater then Details
             document.write("<h2>24 Greater Then Age Detail</h2>")
@@ -50,14 +59,20 @@
                 document.write("Name : " + employess[i].name + ", " +" Age : " + employess[i].age + ", " + "Salary : "  + employess[i].salart +"<br />" )
               }
             }
-             
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------
+            
+            //only find max value  
             const age1 = employess.map(a => a.age);
             const highestAmount = Math.max(...age1);
             console.log(highestAmount);
 
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+            //only find min value
             const age2 = employess.map(a => a.age);
-            const highestAmount2 = Math.min(...age2);
-            console.log(highestAmount2);
+            const lowestAmount2 = Math.min(...age2);
+            console.log(lowestAmount2);
 
 
 
